@@ -3,6 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Khand:400,500,700|Quantico:700);
 body {
   color: #666666;
+  font-weight: 300;
 }
 a:not(.btn) {
   color: #049CDB;
@@ -203,13 +204,20 @@ a:hover {
   -ms-transition: all 200ms ease 0s 0.5s linear;
   transition: all 200ms ease 0s 0.5s linear;
 }
-h1,
+h1 {
+  font-family: 'Quantico', sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  margin: 10px 0;
+  padding: 0px;
+  text-transform: uppercase
+}
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Khand', sans-serif;
   font-weight: 300;
   line-height: normal;
   margin: 10px 0;
