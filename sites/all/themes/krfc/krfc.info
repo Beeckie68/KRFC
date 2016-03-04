@@ -87,3 +87,6 @@ lessc[] = lessc/slideshow.less
 
 scripts[] = assets/scripts/evolve.js
 scripts[] = assets/scripts/custom.js
+
+; Add a style sheet for all media
+stylesheets[all][] = assets/css/krfc-custom.css
