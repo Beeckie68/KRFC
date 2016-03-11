@@ -5,7 +5,77 @@ body {
   color: #666666;
   font-weight: 300;
 }
-a.site-logo.active {
+section#section-header.dexp-section.dexp-sticky {
+  background-image: url("/KRFC/sites/default/files/pictures/KRFC_header_img.png");
+  background-size: cover;
+}
+a.site-logo {
   margin: 55px 0 40px 0;
   width: 100%;
+}
+.social-top .fa {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 30px;
+  margin: 0 7.5px;
+  position: relative;
+  top: 65px;
+  right: 0;
+}
+.palm-top {
+  position: absolute;
+  top: 145px;
+  right: 15px;
+  text-align: right;
+  padding: 0;
+}
+.social-top .fa:hover, .social-top .fa:active{
+  color: rgba(255, 255, 255, 1);
+}
+a:not(.btn) {
+  color: #049CDB;
+}
+a:not(.btn):hover {
+  color: #268cbf;
+}
+ul.menu {
+  text-align: left !important;
+  position: absolute;
+  left: -155px;
+  top: 155px;
+}
+#section-header .dexp-dropdown > ul > li > a {
+  text-transform: lowercase;
+  font-size: 24px;
+  color: #fff;
+  font-family: 'Khand', sans-serif;
+  font-weight: 300;
+  padding: 35px 10px;
+  line-height: normal;
+  text-decoration: none;
+  outline: none;
+  width: 106px;
+  text-align: center;
+}
+#section-header .dexp-dropdown > ul > li > a:hover,
+#section-header .dexp-dropdown > ul > li > a.active,
+.front #section-header .dexp-dropdown > ul > li:nth-child(6):hover > a {
+  color: #fff;
+  background: rgba(255, 30, 31, 0.66);
+  -webkit-box-shadow: 0 0 0;
+  -moz-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+}
+#section-header .dexp-dropdown > ul > li:hover,
+#section-header .dexp-dropdown > ul > li.active {
+  -webkit-box-shadow: 0 0 0;
+  -moz-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+}
+#section-header .dexp-dropdown > ul > li:hover > a,
+#section-header .dexp-dropdown > ul > li.active > a {
+  color: #fff;
+  background: rgba(255, 30, 31, 0.66);
+}
+#section-header .dexp-dropdown > ul > li {
+  margin: 0 0 0 0;
 }
