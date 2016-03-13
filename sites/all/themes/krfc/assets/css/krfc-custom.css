@@ -1,9 +1,16 @@
 /* Custom css file for K. Ramsel FC Theming */
 
 @import url(https://fonts.googleapis.com/css?family=Khand:400,500,700|Quantico:700);
+
 body {
   color: #666666;
   font-weight: 300;
+}
+h1 {
+  color: #ff1e1f;
+  font-family: 'Quantico';
+  font-weight: 700;
+  text-transform: uppercase;
 }
 section#section-header.dexp-section.dexp-sticky {
   background-image: url("/KRFC/sites/default/files/pictures/KRFC_header_img.png");
@@ -21,6 +28,9 @@ a.site-logo {
   top: 65px;
   right: 0;
 }
+#section-header.fixed-transition .social-top .fa {
+  top: 39px;
+  }
 .palm-top {
   position: absolute;
   top: 145px;
@@ -28,14 +38,21 @@ a.site-logo {
   text-align: right;
   padding: 0;
 }
+#section-header.fixed-transition .palm-top {
+  right: 135px;
+  top: 30px;
+  width: 5%;
+}
 .social-top .fa:hover, .social-top .fa:active{
   color: rgba(255, 255, 255, 1);
 }
-a:not(.btn) {
-  color: #049CDB;
+#section-header.fixed-transition a.site-logo {
+  margin: 15px 0;
+  left: -45px;
+  position: relative;
 }
-a:not(.btn):hover {
-  color: #268cbf;
+#section-header.fixed-transition .site-logo img {
+  max-height: 76px;
 }
 ul.menu {
   text-align: left !important;
@@ -43,24 +60,27 @@ ul.menu {
   left: -155px;
   top: 155px;
 }
+#section-header.fixed-transition ul.menu {
+  top: 0px;
+}
 #section-header .dexp-dropdown > ul > li > a {
-  text-transform: lowercase;
-  font-size: 24px;
   color: #fff;
   font-family: 'Khand', sans-serif;
-  font-weight: 300;
-  padding: 35px 10px;
+  font-size: 24px;
+  font-weight: 400;
   line-height: normal;
-  text-decoration: none;
   outline: none;
-  width: 106px;
+  padding: 35px 10px;
   text-align: center;
+  text-decoration: none;
+  text-transform: lowercase;
+  width: 106px;
 }
 #section-header .dexp-dropdown > ul > li > a:hover,
 #section-header .dexp-dropdown > ul > li > a.active,
 .front #section-header .dexp-dropdown > ul > li:nth-child(6):hover > a {
-  color: #fff;
   background: rgba(255, 30, 31, 0.66);
+  color: #fff;
   -webkit-box-shadow: 0 0 0;
   -moz-box-shadow: 0 0 0;
   box-shadow: 0 0 0;
@@ -73,9 +93,30 @@ ul.menu {
 }
 #section-header .dexp-dropdown > ul > li:hover > a,
 #section-header .dexp-dropdown > ul > li.active > a {
-  color: #fff;
   background: rgba(255, 30, 31, 0.66);
+  color: #fff;
 }
 #section-header .dexp-dropdown > ul > li {
   margin: 0 0 0 0;
+}
+#section-header .dexp-dropdown > ul li ul {
+  left: 0;
+  top: 106px;
+}
+#section-header .dexp-dropdown > ul li ul a {
+color: #000;
+font-family: 'Khand', sans-serif;
+font-size: 16px;
+font-weight: 400;
+}
+#section-header .dexp-dropdown > ul li ul li ul {
+  left: 200px;
+  top: 0;
+}
+#section-header.fixed-transition .dexp-dropdown > ul li ul {
+  top: 106px;
+}
+#section-header.fixed-transition .dexp-dropdown > ul li ul li ul {
+  left: 200px;
+  top: 0;
 }
