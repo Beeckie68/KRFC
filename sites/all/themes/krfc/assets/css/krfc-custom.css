@@ -28,6 +28,9 @@ a.site-logo {
   top: 65px;
   right: 0;
 }
+#section-header.fixed-transition {
+  opacity: 1;
+}
 #section-header.fixed-transition .social-top .fa {
   top: 39px;
   }
@@ -55,7 +58,6 @@ a.site-logo {
   max-height: 76px;
 }
 ul.menu {
-  text-align: left !important;
   position: absolute;
   left: -155px;
   top: 155px;
@@ -119,4 +121,44 @@ font-weight: 400;
 #section-header.fixed-transition .dexp-dropdown > ul li ul li ul {
   left: 200px;
   top: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  ul.menu {
+    top: 121px;
+  }
+  #section-header.fixed-transition ul.menu {
+    left: -205px;
+  }
+  a.site-logo {
+    left: -30px;
+  }
+  #section-header.fixed-transition a.site-logo {
+    left: -25px;
+  }
+  .palm-top {
+    top: 125px;
+    right: 23px;
+  }
+  #section-header.fixed-transition .palm-top {
+    right: 130px;
+    top: 35px;
+  }
+  #section-header.fixed-transition .dexp-dropdown > ul li ul {
+    left: 0;
+  }
+
+}
+
+@media screen and (max-width: 991px) {
+  #section-header .container {
+    height: 106px;
+  }
+  #section-header a.site-logo {
+    margin: 15px 0;
+  }
+  #section-header a.site-logo img {
+    height: 76px;
+  }
+
 }
