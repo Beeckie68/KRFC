@@ -84,6 +84,3 @@ lessc[] = lessc/shortcode.less
 lessc[] = lessc/typography.less
 lessc[] = lessc/responsive.less
 lessc[] = lessc/slideshow.less
-
-scripts[] = assets/scripts/evolve.js
-scripts[] = assets/scripts/custom.js
