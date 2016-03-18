@@ -154,11 +154,25 @@ font-weight: 400;
   #section-header .container {
     height: 106px;
   }
+  section#section-header.dexp-section.dexp-sticky {
+    background-image: url();
+  }
+  #section-main-content {
+    padding: 0 0 15px 0;
+  }
   #section-header a.site-logo {
     margin: 15px 0;
   }
   #section-header a.site-logo img {
     height: 76px;
+  }
+  div.social-top {
+    position: absolute;
+    right: 0;
+    top:-50px;
+  }
+  .region-socials {
+    display: none;
   }
 
 }
