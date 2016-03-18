@@ -12,6 +12,14 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
 }
+h2,h3,h4,h5,h6 {
+  font-family: 'Khand';
+  font-weight: 400;
+  line-height: 110%;
+}
+a:not(.btn), a:not(.btn):hover {
+  color: #ff1e1f;
+}
 section#section-header.dexp-section.dexp-sticky {
   background-image: url("/KRFC/sites/default/files/pictures/KRFC_header_img.png");
   background-size: cover;
@@ -154,16 +162,22 @@ font-weight: 400;
 
   section#section-header.dexp-section.dexp-sticky {
     background-image: url();
+    background-color: #ff1e1f !important;
   }
   #section-main-content {
     padding: 0 0 15px 0;
   }
   #section-header a.site-logo {
-    margin: 15px 0;
+    margin: 0 0;
   }
-  #section-header a.site-logo img {
-    height: 76px;
+  body #section-header a.site-logo img {
+    content: url(/KRFC/sites/default/files/KRamselFC_logo_embleem_mobile.svg);
+    height: 36px;
   }
+  /*body #section-header a.site-logo img:after {
+    content: url(/KRFC/sites/default/files/KRamselFC_logo_embleem_mobile.svg);
+    display: inline-block;
+  }*/
   div.social-top {
     position: absolute;
     right: 0;
@@ -172,22 +186,33 @@ font-weight: 400;
   .region-socials {
     display: none;
   }
-  .btn-inverse {
-    background-color: #ff1e1f !important;
+  .btn {
+    box-shadow: 0 0 0;
+  }
+  .btn-inverse, .btn-inverse:active {
+    background-color: #fff !important;
+    color: #ff1e1f !important;
+
   }
   .btn-inverse:hover {
-    background-color: #b62222 !important;
+    background-color: #fff !important;
+  }
+  .mobile-open:target .fa-bars:before {
+    content: "\f00d";
   }
   div#dexp-dropdown.dexp-menu.dexp-dropdown.mobile-open {
-    opacity: 0.95;
     position: initial;
   }
   ul.menu {
     position: inherit;
   }
+  body #section-header .dexp-dropdown ul li {
+    border-bottom:1px solid #fff;
+  }
   body #section-header .dexp-dropdown ul.menu.menu-open li {
     padding: 0 0;
     text-indent: 15px;
+    border-bottom:1px solid #000;
   }
   body #section-header .dexp-dropdown > ul > li {
     padding-left: 0 !important;
@@ -204,6 +229,10 @@ font-weight: 400;
   .menu-toggler {
     right: 30px;
     top: 20px;
+  }
+  body #section-header a.dexp-menu-toggler {
+    width: 66px;
+    top: -64px;
   }
   ul.menu.menu-open {
     background-color: #666666;
