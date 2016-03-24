@@ -1,6 +1,6 @@
 /* Custom css file for K. Ramsel FC Theming */
 
-@import url(https://fonts.googleapis.com/css?family=Khand:400,500,700|Quantico:700);
+@import url(https://fonts.googleapis.com/css?family=Khand:300,400,500,700|Quantico:700);
 
 body {
   color: #666666;
@@ -131,6 +131,40 @@ font-weight: 400;
   top: 0;
 }
 
+
+
+#section-footer:after {
+  background-color: inherit;
+}
+i.fa.txt-inverted {
+  font-size: 30px;
+  margin-right: 15px;
+}
+i.fa.txt-inverted:hover {
+  color: #000;
+}
+div.btn.btn-lg.btn-inverse {
+  background: #fff !important;
+  box-shadow: 0 0 0;
+  color: #f00 !important;
+  font-family: Khand;
+  text-shadow: 0 0 0;
+  font-size: 27.5px;
+  font-weight: 400;
+  width: 100%;
+}
+div.btn.btn-lg.btn-inverse:hover {
+  color: #000 !important;
+}
+.copyright {
+  font-family: 'Khand';
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+}
+.txt-inverted {
+  color: #fff;
+}
 @media screen and (max-width: 1199px) {
   ul.menu {
     top: 121px;
