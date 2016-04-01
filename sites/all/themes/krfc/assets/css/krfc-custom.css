@@ -9,16 +9,45 @@ body {
 h1 {
   color: #ff1e1f;
   font-family: 'Quantico';
+  font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
+}
+h1.sub-title, h1.sub-title.txt-inverted {
+  font-size: 24px;
 }
 h2,h3,h4,h5,h6 {
   font-family: 'Khand';
   font-weight: 400;
   line-height: 110%;
 }
+h4.sub-title {
+  font-weight: 500;
+  margin: 10px 0 0;
+  text-transform: uppercase;
+}
 a:not(.btn), a:not(.btn):hover {
   color: #ff1e1f;
+}
+.txt-inverted a:not(.btn) {
+  color: #fff;
+  font-family: 'Khand';
+  font-weight: 500;
+}
+.address::before {
+  content: "\f124"" | ";
+  font-family: 'FontAwesome';
+}
+.phone::before {
+  content: "\f095"" | ";
+  font-family: FontAwesome;
+}
+.email::before {
+  content: "\f003"" | ";
+  font-family: 'FontAwesome';
+}
+.email a:hover, h4.txt-inverted a:hover {
+  color: #000;
 }
 section#section-header.dexp-section.dexp-sticky {
   background-image: url("/KRFC/sites/default/files/pictures/KRFC_header_img.png");
@@ -132,7 +161,12 @@ font-weight: 400;
 }
 
 
-
+#section-bottom div.row {
+  border-top: 12px solid #fff;
+}
+.region-bottom-first, .region-bottom-second, .region-bottom-third, .region-bottom-fourth {
+  margin-top: 23px;
+}
 #section-footer:after {
   background-color: inherit;
 }
@@ -146,8 +180,9 @@ i.fa.txt-inverted:hover {
 div.btn.btn-lg.btn-inverse {
   background: #fff !important;
   box-shadow: 0 0 0;
-  color: #f00 !important;
+  color: #ff1e1f !important;
   font-family: Khand;
+  line-height: 110%;
   text-shadow: 0 0 0;
   font-size: 27.5px;
   font-weight: 400;
