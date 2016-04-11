@@ -66,3 +66,6 @@ xmlrpc.php
 /profiles
 /scripts
 /themes
+
+sites/all/modules
+sites/all/libraries

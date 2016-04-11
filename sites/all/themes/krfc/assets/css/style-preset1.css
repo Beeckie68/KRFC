@@ -2171,7 +2171,7 @@ ul.menu {
   body #section-header .dexp-dropdown > ul > li .menu-toggler {
     color: #fff;
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 0;
     width: 18px;
     height: 18px;
     line-height: 18px;
