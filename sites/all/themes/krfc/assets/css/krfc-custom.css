@@ -49,6 +49,10 @@ a:not(.btn), a:not(.btn):hover {
 .email a:hover, h4.txt-inverted a:hover {
   color: #000;
 }
+.website::before {
+  content: "\f0ac"" | ";
+  font-family: 'FontAwesome';
+}
 section#section-header.dexp-section.dexp-sticky {
   background-image: url("/KRFC/sites/default/files/pictures/KRFC_header_img.png");
   background-size: cover;
@@ -316,5 +320,16 @@ div.btn.btn-lg.btn-inverse:hover {
   .mobile-open ul.menu.menu-open ul.menu.menu-open ul.menu.menu-open a {
     color: #000 !important;
   }
+}
 
+@media screen and (max-width: 767px) {
+
+  #section-bottom .region-bottom-second, #section-bottom .region-bottom-third, #section-bottom .region-extra-bottom {
+  border-bottom: 1px dotted #fff;
+  padding-bottom: 15px;
+  }
+  #section-bottom .region-bottom-fourth {
+  border-bottom: 1px dotted #fff;
+  padding-bottom: 30px;
+  }
 }
